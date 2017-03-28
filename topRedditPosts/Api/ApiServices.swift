@@ -55,7 +55,7 @@ class ApiService: NSObject {
                         if nextPage == nil {
                             try context.save()
                         }
-                    } catch let err {
+                    } catch let _ {
                         error("Error when save data" as AnyObject?)
                         return
                     }
