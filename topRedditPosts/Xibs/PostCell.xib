@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="279" id="AAz-H3-Wee" customClass="PostCell" customModule="topRedditPosts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AAz-H3-Wee" id="w2I-Iu-3TB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adorable little girl mistakes broken water heater for a robot" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-cH-YeS">
+                        <rect key="frame" x="8" y="8" width="359" height="43"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FisterRobotOh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1P7-iM-sRv">
+                        <rect key="frame" x="8" y="59" width="359" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments: 54848" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20l-oG-ytr">
+                        <rect key="frame" x="8" y="86.5" width="211" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVV-ak-NTx">
+                        <rect key="frame" x="227" y="86.5" width="140" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="tG1-xD-9dY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-PK-OEe">
+                        <rect key="frame" x="8" y="112" width="359" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="IR6-jY-jzh"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="1P7-iM-sRv" secondAttribute="trailing" id="1Ek-aS-JLC"/>
+                    <constraint firstItem="tVV-ak-NTx" firstAttribute="trailing" secondItem="w2I-Iu-3TB" secondAttribute="trailingMargin" id="7fn-83-WfW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WYh-PK-OEe" secondAttribute="bottom" constant="9" id="Epe-mV-xpW"/>
+                    <constraint firstItem="1P7-iM-sRv" firstAttribute="leading" secondItem="w2I-Iu-3TB" secondAttribute="leadingMargin" id="HGh-O8-0Yo"/>
+                    <constraint firstItem="20l-oG-ytr" firstAttribute="leading" secondItem="w2I-Iu-3TB" secondAttribute="leadingMargin" id="N4g-Up-rVx"/>
+                    <constraint firstItem="1P7-iM-sRv" firstAttribute="top" secondItem="gbV-cH-YeS" secondAttribute="bottom" constant="8" id="NHm-Qs-OMk"/>
+                    <constraint firstItem="gbV-cH-YeS" firstAttribute="top" secondItem="w2I-Iu-3TB" secondAttribute="topMargin" id="PZi-kH-B4N"/>
+                    <constraint firstItem="tVV-ak-NTx" firstAttribute="top" secondItem="1P7-iM-sRv" secondAttribute="bottom" constant="8" id="Pjz-BZ-10Q"/>
+                    <constraint firstItem="WYh-PK-OEe" firstAttribute="leading" secondItem="w2I-Iu-3TB" secondAttribute="leadingMargin" id="Tyv-cb-OyJ"/>
+                    <constraint firstItem="20l-oG-ytr" firstAttribute="top" secondItem="1P7-iM-sRv" secondAttribute="bottom" constant="8" id="bzZ-6F-z94"/>
+                    <constraint firstItem="gbV-cH-YeS" firstAttribute="leading" secondItem="w2I-Iu-3TB" secondAttribute="leadingMargin" id="dWM-46-O2h"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WYh-PK-OEe" secondAttribute="trailing" id="g1s-nt-sLI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gbV-cH-YeS" secondAttribute="trailing" id="k0V-BC-dxG"/>
+                    <constraint firstItem="WYh-PK-OEe" firstAttribute="top" secondItem="tVV-ak-NTx" secondAttribute="bottom" constant="8.5" id="lF4-kr-0IA"/>
+                    <constraint firstItem="tVV-ak-NTx" firstAttribute="leading" secondItem="20l-oG-ytr" secondAttribute="trailing" constant="8" id="phZ-hE-wYH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="authorLabel" destination="1P7-iM-sRv" id="9Cs-gl-Sr5"/>
+                <outlet property="commentLabel" destination="20l-oG-ytr" id="hrs-3c-e9U"/>
+                <outlet property="dateLabel" destination="tVV-ak-NTx" id="JQI-1c-AwH"/>
+                <outlet property="postImageView" destination="WYh-PK-OEe" id="PpU-lx-X2z"/>
+                <outlet property="postImageViewHeightConstraint" destination="IR6-jY-jzh" id="mIh-If-AZV"/>
+                <outlet property="titleLabel" destination="gbV-cH-YeS" id="1Xs-Z1-Y5o"/>
+            </connections>
+            <point key="canvasLocation" x="0.5" y="42.5"/>
+        </tableViewCell>
+    </objects>
+</document>
